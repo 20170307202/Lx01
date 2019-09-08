@@ -1,0 +1,26 @@
+DROP DATABASE IF EXISTS Works;
+CREATE DATABASE Works DEFAULT CHARSET=GBK;
+
+USE Works;
+CREATE TABLE UserInfo
+(
+UserName nvarchar(50) Primary key,
+Password nvarchar(50) not null,
+QQ nvarchar(12),
+Email nvarchar(50),
+Type nchar(10) not null,
+UserImg nvarchar(250)
+) ;
+
+ActivityID int Primary key auto_increment,
+Activity int(4) not null DEFAULT '活动编号',
+
+ActivityID int Primary key auto_increment,
+WorkInfo nchar(50) not null DEFAULT '作品名称',
+
+ActivityID int Primary key auto_increment,
+Comment int(4) not null DEFAULT '作品评论编号',
+
+ActivityID int Primary key auto_increment,
+Image int(4) not null DEFAULT '图片编号',
+
